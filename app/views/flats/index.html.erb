@@ -1,11 +1,31 @@
 <%= render "navbar" %>
 
 <div class="container">
-  <h1>All our Flats (<%= @flats.count %>)</h1>
+
+  <div class="title">
+    <h1>All our Flats (<%= @flats.count %>)</h1>
+  </div>
+
+  <div class="flats row">
 
   <% @flats.each do |flat| %>
-    <p><%= flat.name %></p>
-    <p><%= flat.address %></p>
-    <%= link_to 'details', flat_path(flat) %>
+    <div class="flat col-4">
+      <div class="flat-details">
+        <h3> <%= flat.name %> </h3>
+        <p> <%= flat.address %> </p>
+        <span>
+          <i class="fas fa-users"></i>
+          <%= flat.number_of_guests %>
+          <i class="fas fa-euro-sign"></i>
+          <%= flat.price_per_night %>
+        </span>
+      </div>
+      <div class="flat-actions">
+        <%= link_to 'details', flat_path(flat) %>
+      </div>
+    </div>
   <% end %>
+
+  </div>
+
 </div>
