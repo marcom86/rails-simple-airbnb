@@ -1,12 +1,11 @@
 <%= render "navbar" %>
 
+<div class="container">
+  <h1>All our Flats (<%= @flats.count %>)</h1>
 
-<h1>All our Flats</h1>
-
-<% @flats.each do |flat| %>
-  <p><%= flat.name %></p>
-  <p><%= flat.address %></p>
-  <%= link_to 'details', flat_path(flat) %>
-<% end %>
-
-<p><%= link_to 'Add a flat', new_flat_path %></p>
+  <% @flats.each do |flat| %>
+    <p><%= flat.name %></p>
+    <p><%= flat.address %></p>
+    <%= link_to 'details', flat_path(flat) %>
+  <% end %>
+</div>
