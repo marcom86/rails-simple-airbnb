@@ -1,16 +1,39 @@
 // Place all the styles related to the flats controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.title {
+  margin-top: 20px;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
 }
 
+.flat {
+  margin-top: 20px;
+}
+
 .flat-details {
   background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.fas {
+  margin-right: 10px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.ml-3 {
+  margin-left: 16px;
 }
 
 .flat-actions {
   border: 2px solid;
   border-color:#f8f9fa;
+  padding: 20px;
 }
