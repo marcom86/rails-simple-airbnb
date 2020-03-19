@@ -51,17 +51,23 @@
 }
 
 .banner {
-  background-color: #eaebed;
+  // background-color: #eaebed;
+  background-image: url('https://images.unsplash.com/photo-1494526585095-c41746248156');
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
   height:350px;
 }
 
 .margin-top-negative {
-  margin-top: -90px;
+  margin-top: -80px;
 }
 
 .title-flat {
-  background-color: #b2d4f7;
+  background-color: #f8f9fa;
   padding: 20px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px lightgrey;
 }
 
 .flat-show-address {
@@ -69,31 +75,41 @@
 }
 
 .description-flat {
-  background-color: #b2d4f7;
+  background-color: #f8f9fa;
   padding: 20px;
   margin-top: 20px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px lightgrey;
 }
 
 .map {
   height: 300px;
-  background-color: #b2d4f7;
+  background-color: #f8f9fa;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px lightgrey;
 }
 
 .booking-flat {
-  background-color: #b2d4f7;
+  background-color: #f8f9fa;
+  border-radius: 3px;
   padding: 20px;
+  box-shadow: 1px 1px 2px lightgrey;
 }
 
 .details-show {
-  background-color: #b2d4f7;
+  background-color: #f8f9fa;
+  border-radius: 3px;
   margin-top: 20px;
   padding: 20px;
+  box-shadow: 1px 1px 2px lightgrey;
 }
 
 .share {
-  background-color: #b2d4f7;
+  background-color: #f8f9fa;
+  border-radius: 3px;
   margin-top: 20px;
   padding: 20px;
+  box-shadow: 1px 1px 2px lightgrey;
 }
 
 .flat-show-share {
