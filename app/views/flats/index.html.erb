@@ -3,13 +3,15 @@
 <div class="container">
 
   <div class="title">
-    <h1>All our Flats (<%= @flats.count %>)</h1>
+    <h1>All our Flats</h1>
+    <p class="subtitle">All <%= @flats.count %> flats.</p>
   </div>
 
   <div class="flats row">
 
   <% @flats.each do |flat| %>
     <div class="flat col-4">
+      <div class="flat-card-image" style="background-image: url(<%= flat.picture_url %>)"></div>
       <div class="flat-details">
         <h3> <%= flat.name %> </h3>
         <p> <%= flat.address %> </p>
