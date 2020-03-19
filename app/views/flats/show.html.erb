@@ -7,8 +7,8 @@
     <div class="col-8">
       <div class="details">
         <div class="title-flat">
-          <h2><%= @flat.name %></h2>
-          <p><%= @flat.address %></p>
+          <h1><%= @flat.name %></h1>
+          <p class="flat-show-address"><%= @flat.address %></p>
         </div>
         <div class="description-flat">
           <h3>A bit more about this flat...</h3>
@@ -42,8 +42,32 @@
           <button type="submit" class="btn btn-success btn-lg btn-block">Book</button>
         </form>
       </div>
-      <div class="details"></div>
-      <div class="share"></div>
+
+      <div class="details-show">
+        <h3>Details</h3>
+        <div class="flex">
+          <div class="flex">
+            <i class="fas fa-users"></i>
+            <%= @flat.number_of_guests %>
+          </div>
+          <div class="flex ml-3">
+            <i class="fas fa-euro-sign"></i>
+            <%= @flat.price_per_night %>
+          </div>
+        </div>
+      </div>
+
+      <div class="share">
+        <div class="flex-align">
+          <p class="flat-show-share">Share</p>
+          <div class="flex links">
+            <i class="fab fa-facebook-square link"></i>
+            <i class="fab fa-twitter-square link"></i>
+            <i class="fab fa-pinterest-square link"></i>
+            <i class="fas fa-envelope-square link"></i>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

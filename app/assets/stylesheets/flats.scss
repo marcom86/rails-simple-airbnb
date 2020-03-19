@@ -52,7 +52,7 @@
 
 .banner {
   background-color: #eaebed;
-  height:300px;
+  height:350px;
 }
 
 .margin-top-negative {
@@ -61,10 +61,17 @@
 
 .title-flat {
   background-color: #b2d4f7;
+  padding: 20px;
+}
+
+.flat-show-address {
+  font-size: 20px;
 }
 
 .description-flat {
   background-color: #b2d4f7;
+  padding: 20px;
+  margin-top: 20px;
 }
 
 .map {
@@ -75,4 +82,31 @@
 .booking-flat {
   background-color: #b2d4f7;
   padding: 20px;
+}
+
+.details-show {
+  background-color: #b2d4f7;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.share {
+  background-color: #b2d4f7;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.flat-show-share {
+  margin: 0;
+}
+
+.flex-align {
+display:flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.link {
+  font-size: 30px;
+  margin-right: 5px;
 }
